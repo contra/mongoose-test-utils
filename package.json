@@ -1,7 +1,7 @@
 {
   "name": "mongoose-test-utils",
   "description": "Test utilities for mongoose",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://github.com/wearefractal/mongoose-test-utils",
   "repository": "git://github.com/wearefractal/mongoose-test-utils.git",
   "author": "Fractal contact@wearefractal.com (http://wearefractal.com)",
