@@ -28,7 +28,31 @@ npm install mongoose-test-utils --save
 ## Example
 
 ```js
-EXAMPLEHERE
+var db = mongoose.createConnection();
+
+// multidump
+utils.dump(db, [PersonModel, CarModel], function(err, dump){
+  // dump.Person = [models]
+  // dump.Car = [models]
+});
+
+// single dump
+utils.dump(db, PersonModel, function(err, dump){
+  // dump.Person = [models]
+});
+
+// import
+var toImport = {
+  Person: [models],
+  Car: [models]
+};
+utils.import(db, toImport, function(err){
+
+});
+
+utils.wipe(db, function(err){
+  // everything is empty now
+});
 ```
 
 
